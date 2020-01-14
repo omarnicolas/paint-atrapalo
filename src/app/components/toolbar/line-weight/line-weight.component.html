@@ -1,0 +1,6 @@
+Line weight:
+<select [(ngModel)]="selectedOption">
+  <option *ngFor="let o of options" [value]="o.value">
+    {{ o.name }}
+  </option>
+</select>

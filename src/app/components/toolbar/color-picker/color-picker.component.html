@@ -1,0 +1,12 @@
+Select a color:
+<select
+  [(ngModel)]="selectedOption"
+  [ngStyle]="{ 'background-color': selectedOption }"
+>
+  <option
+    *ngFor="let o of options"
+    [value]="o.value"
+    [ngStyle]="{ 'background-color': o.value }"
+  >
+  </option>
+</select>

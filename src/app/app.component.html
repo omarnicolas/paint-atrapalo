@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="row">
+    <app-canvas #canvas></app-canvas>
+  </div>
+  <div class="row">
+    <div style="margin: 20px; background: #ccc">
+      <app-line-weight [canvas]="canvas"></app-line-weight>
+      <app-color-picker [canvas]="canvas"></app-color-picker>
+      <app-undo-redo [canvas]="canvas"></app-undo-redo>
+    </div>
+  </div>
+</div>
